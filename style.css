@@ -4,13 +4,23 @@
     box-sizing: border-box;
 }
 .nav-link:hover {
-    color: blue;
+    color: #3ffa06
+}
+.navbar{
+   z-index: 9999;
+   opacity: 1;
 }
 .nav-link{
     color: #fff;
+    font-size: 1.1rem;
+    z-index: 9999;
+    margin-left: 1.9rem;
+    font-weight: 600;
 }
 .navbar-brand{
     color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 .navbar .reach-btn{
     border: .0;
@@ -60,7 +70,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #555273;
+    background: #3ffa06;
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -86,4 +96,26 @@
 }
 .carousel-control-next-icon {
     background-image: url(./assets/right-arrow.svg) !important;
+}
+
+/******************************* Hero Section **********************************/
+.hero-section{
+    margin-top: -5.7rem;
+    z-index: 99;
+}
+.hero-section .carousel .image-container .carousel-item img{
+  height: 95vh;
+  opacity: 0.9;
+}
+.hero-section .carousel .carousel-inner .image-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-section .carousel .image-container {
+  position: relative;
+  display: inline-block;
 }
