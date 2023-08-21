@@ -24,6 +24,7 @@
 }
 .navbar .reach-btn{
     outline: none;
+    border: none;
     border-radius: 16px;
     margin-top: .5rem;
     font-weight: 600;
