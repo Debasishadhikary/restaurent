@@ -224,7 +224,7 @@ margin: 2vh;
 /********************About us section************************/
 
 .about-us{
-  background-image: url(./assets//about-us.jpg);
+  background-image: url(assets/about-us.jpg);
   position: relative;
   padding: 108px 0px 108px;
   background-repeat: no-repeat;
@@ -310,4 +310,80 @@ margin: 2vh;
 }
 .about-us-text{
   margin-bottom: 40px;
+}
+
+
+/*********** Contact Section *****************/
+
+.contact {
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+
+.contact .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-form form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.reach-btn {
+  background: linear-gradient(
+      124deg,
+      #ff2400,
+      #e81d1d,
+      #e8b71d,
+      #e3e81d,
+      #1de840,
+      #1ddde8,
+      #2b1de8,
+      #dd00f3,
+      #dd00f3
+  );
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.reach-btn:hover {
+  background: linear-gradient(
+      124deg,
+
+      #2b1de8,
+      #1ddde8,
+      #1de840,
+      #e3e81d,
+      #e8b71d,
+  );
 }
