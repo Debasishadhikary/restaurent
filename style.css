@@ -220,3 +220,94 @@ margin: 2vh;
   background-color: #e53935; /* Non-Veg icon color */
 }
 
+
+/********************About us section************************/
+
+.about-us{
+  background-image: url(./assets//about-us.jpg);
+  position: relative;
+  padding: 108px 0px 108px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: right bottom;
+}
+.about-us::before{
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0,0,0,0.60);
+}
+.about-banner-text{
+  position: relative;
+}
+.about-us h1{
+  color: #fff;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #fff !important;
+}
+.about-us a{
+  text-decoration: none;
+  color: #fff;
+}
+.about-us-text{
+  padding: 100px 0px 80px;
+}
+.about-us-text .title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.about-us-text .res-text{
+  font-size: 45px;
+  color: #777777;
+  font-weight: 300;
+}
+.about-us-text h1{
+  color: #e73100;
+  font-size: 50px;
+}
+.about-us-text .inner-text p{
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.9em;
+}
+.about-us-text .inner-text button{
+  border: 0;
+  outline: none;
+  background: black;
+  color: #fff;
+  padding: 9px 40px;
+  line-height: 29px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+  border: 1px solid black;
+}
+.about-us-text .inner-text button:hover{
+  background: transparent;
+  border: 1px solid black;
+  color: #000000;
+}
+.about-us-text .right-img{
+  position: relative;
+}
+.about-us-text .upper-pic{
+  text-align: end;
+}
+.about-us-text .lower-pic{
+  position: absolute;
+  left: 56px;
+  top: 150px;
+}
+.about-us-text{
+  margin-bottom: 40px;
+}
