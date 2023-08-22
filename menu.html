@@ -6,6 +6,8 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
           <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-XXi5wXQzWADs1p0AR2Uf5zm9/2ARDMW4BqQnV+XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
           <title> Menu Resturent website</title>
       </head>
 </head>
@@ -44,64 +46,127 @@
 
     <!-- Food Menu Section Start -->
     <section class="menu">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Delicious Menu</h2>
-            </div>
-            <div class="row">
-               <div class="col-lg-4 col-md-6">
-                    <div class="menu-item">
-                        <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
-                        <h3>Food Item 1</h3>
-                        <p>Description of the food item goes here.</p>
-                        <span class="price">$15</span>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="menu-item">
-                        <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
-                        <h3>Food Item 2</h3>
-                        <p>Description of the food item goes here.</p>
-                        <span class="price">$15</span>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="menu-item">
-                        <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
-                        <h3>Food Item 3</h3>
-                        <p>Description of the food item goes here.</p>
-                        <span class="price">$15</span>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="menu-item">
-                        <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
-                        <h3>Food Item 4</h3>
-                        <p>Description of the food item goes here.</p>
-                        <span class="price">$15</span>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="menu-item">
-                        <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
-                        <h3>Food Item 5</h3>
-                        <p>Description of the food item goes here.</p>
-                        <span class="price">$15</span>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="menu-item">
-                        <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
-                        <h3>Food Item 6</h3>
-                        <p>Description of the food item goes here.</p>
-                        <span class="price">$15</span>
-                    </div>
-                </div>
-                <!-- Add more menu items here -->
-            </div>
-        </div>
-    </section>
+     <div class="container">
+         <div class="section-title">
+             <h2>Our Delicious Menu</h2>
+         </div>
+         <div class="row">
+             <!-- Repeat this block for each menu item -->
+
+             <div class="col-lg-4 col-md-6">
+               <div class="menu-card">
+                   <div class="menu-img">
+                       <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
+                   </div>
+                   <div class="menu-details">
+                       <div class="item-header">
+                           <h3>Food Item 1</h3>
+                           <div class="icon veg">
+                               <i class="fas fa-leaf"></i> <!-- Veg Icon -->
+                           </div>
+                       </div>
+                       <p>Description of the food item goes here. Veg Item</p>
+                       <span class="price">$15</span>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-lg-4 col-md-6">
+               <div class="menu-card">
+                   <div class="menu-img">
+                       <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
+                   </div>
+                   <div class="menu-details">
+                       <div class="item-header">
+                           <h3>Food Item 2</h3>
+                           <div class="icon non-veg">
+                               <i class="fas fa-drumstick-bite"></i> <!-- Non-Veg Icon -->
+                           </div>
+                       </div>
+                       <p>Description of the food item goes here. Non-Veg Item</p>
+                       <span class="price">$15</span>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-lg-4 col-md-6">
+               <div class="menu-card">
+                   <div class="menu-img">
+                       <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
+                   </div>
+                   <div class="menu-details">
+                       <div class="item-header">
+                           <h3>Food Item 3</h3>
+                           <div class="icon non-veg">
+                               <i class="fas fa-drumstick-bite"></i> <!-- Non-Veg Icon -->
+                           </div>
+                       </div>
+                       <p>Description of the food item goes here. Non-Veg Item</p>
+                       <span class="price">$15</span>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-lg-4 col-md-6">
+               <div class="menu-card">
+                   <div class="menu-img">
+                       <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
+                   </div>
+                   <div class="menu-details">
+                       <div class="item-header">
+                           <h3>Food Item 4</h3>
+                           <div class="icon veg">
+                               <i class="fas fa-leaf"></i> <!-- Veg Icon -->
+                           </div>
+                       </div>
+                       <p>Description of the food item goes here. Veg Item</p>
+                       <span class="price">$15</span>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-lg-4 col-md-6">
+               <div class="menu-card">
+                   <div class="menu-img">
+                       <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
+                   </div>
+                   <div class="menu-details">
+                       <div class="item-header">
+                           <h3>Food Item 5</h3>
+                           <div class="icon veg">
+                               <i class="fas fa-leaf"></i> <!-- Veg Icon -->
+                           </div>
+                       </div>
+                       <p>Description of the food item goes here.  Veg Item</p>
+                       <span class="price">$15</span>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-lg-4 col-md-6">
+               <div class="menu-card">
+                   <div class="menu-img">
+                       <img src="assets/menu_demo_image.png" alt="Food Item" class="menu-item-img">
+                   </div>
+                   <div class="menu-details">
+                       <div class="item-header">
+                           <h3>Food Item 6</h3>
+                           <div class="icon veg">
+                               <i class="fas fa-leaf"></i> <!-- Veg Icon -->
+                           </div>
+                       </div>
+                       <p>Description of the food item goes here.  Veg Item</p>
+                       <span class="price">$15</span>
+                   </div>
+               </div>
+           </div>
+           
+             <!-- End of menu item block -->
+         </div>
+     </div>
+ </section>
+ 
+ 
     <!-- Food Menu Section End -->
 
     <footer>
