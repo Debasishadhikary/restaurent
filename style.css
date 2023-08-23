@@ -225,6 +225,18 @@ a:hover {
   margin-left: 5rem;
 }
 
+@media (max-width: 500px) {
+  .footer .footer-title{
+      margin-left: -5rem;
+  }
+  .footer .footer-tittle{
+    margin-top: 1.5rem;
+  }
+  .footer .footer-tittle ul li {
+    margin-top: .3rem;
+  }
+}
+
 
 
 /* DEBASISH PORTION END*/
