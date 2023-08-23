@@ -1,48 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* DEBASISH PORTION START*/
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baskervville', serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b5b5b5;
+}
+.btn{
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  width: 9rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  padding: .7rem;
+  color: white;
+}
+.btn:hover{
+  outline: 1.5px solid black;
 }
 .nav-link:hover {
-    color: #b5b5b5;
+  color: #b5b5b5;
 }
-.navbar{
-   z-index: 9999;
-   color: whitesmoke;
+
+.navbar {
+  z-index: 9999;
+  color: whitesmoke;
 }
-.nav-link{
-    color: #fff;
-    font-size: 1.1rem;
-    z-index: 9999;
-    margin-left: 1.9rem;
-    font-weight: 600;
+
+.nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+  z-index: 9999;
+  margin-left: 1.9rem;
+  font-weight: 600;
 }
-.navbar-brand{
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 700;
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
-.navbar .reach-btn{
-    outline: none;
-    border: none;
-    border-radius: 16px;
-    margin-top: .5rem;
-    font-weight: 600;
-    padding: 8px;
-    width: 110px;
-    position: relative;
-    z-index: 0;
-    color: #000000;
+
+.navbar .reach-btn {
+  outline: none;
+  border: none;
+  border-radius: 16px;
+  margin-top: .5rem;
+  font-weight: 600;
+  padding: 8px;
+  width: 110px;
+  position: relative;
+  z-index: 0;
+  color: #000000;
 }
+
 .reach-btn::before {
-    position: absolute;
-    content: "";
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    left: -2px;
-    top: -2px;
-    background: linear-gradient(
-      124deg,
+  position: absolute;
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(124deg,
       #ff2400,
       #e81d1d,
       #e8b71d,
@@ -51,105 +81,160 @@
       #1ddde8,
       #2b1de8,
       #dd00f3,
-      #dd00f3
-    );
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    animation: move 20s linear infinite;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    border-radius: 10px;
-  }
-  
-.reach-btn:hover::before {
-    opacity: 1;
-  }
-  
-  .reach-btn::after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-  }
-  
-  @keyframes move {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
-  .navbar{
-    height: 90px;
-  }
-  .carousel-control-prev-icon {
-    background-image: url(./assets/left-arrow.png) !important;
-    width: 70px;
-    height: 90px;
+      #dd00f3);
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  animation: move 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
+
+.reach-btn:hover::before {
+  opacity: 1;
+}
+
+.reach-btn::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.navbar {
+  height: 90px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(./assets/left-arrow.png) !important;
+  width: 70px;
+  height: 90px;
+}
+
 .carousel-indicators [data-bs-target] {
-  width: 13px;
-  height: 13px;
+  width: 10.5px;
+  height: 10.5px;
   border-radius: 50%;
 }
+
 .carousel-control-next-icon {
-    background-image: url(./assets/left-arrow.png) !important;
-    width: 70px;
-    height: 90px;
-    rotate: 180deg;
+  background-image: url(./assets/left-arrow.png) !important;
+  width: 70px;
+  height: 90px;
+  rotate: 180deg;
 }
 
 /******************************* Hero Section **********************************/
-.hero-section{
-    margin-top: -5.7rem;
+.hero-section {
+  margin-top: -5.7rem;
 }
-.hero-section .carousel .image-container .carousel-item img{
+
+.hero-section .carousel .image-container .carousel-item img {
   height: 95vh;
   opacity: 0.9;
   filter: blur(1.3px);
 }
 
+/******************************* CTA Section **********************************/
+.cta{
+  width: 100%;
+  height: 70vh;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.cta .content h3{
+  font-size: 3.3rem;
+  font-weight: 500;
+}
+/******************************* Service Section **********************************/
+.service{
+  width: 100%;
+  height: 70vh;
+  padding-left: 3.5rem;
+  margin-top: -3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service .card-group .card{
+  width: 450px;
+  height: 150px;
+  border: none;
+}
+.service .card-group .card img{
+  width: 25%;
+  height: 55%;
+  margin-left: 1rem;
+}
 
-.footer{
+/******************************* Footer Section **********************************/
+.footer {
   background-color: #000000;
   color: whitesmoke;
   width: 100%;
   height: 55vh;
   padding: 1rem 2rem;
-  margin-top: 15rem;
   display: inline-table;
 }
-.footer .footer-tittle ul li{
+
+.footer .footer-tittle ul li {
   list-style-type: none;
   margin-left: -1.7rem;
   margin-top: 1rem;
 }
-.footer a{
+
+.footer a {
   color: white;
   text-decoration: none;
 }
-.footer .footer-logo a{
+
+.footer .footer-logo a {
   font-weight: 700;
   margin: 1rem 5rem;
   font-size: 1.9rem;
   color: whitesmoke;
 }
-.footer .footer-tittle .footer-pera{
+
+.footer .footer-tittle .footer-pera {
   margin-left: 5rem;
 }
-.footer .footer-social{
+
+.footer .footer-social {
   margin-left: 5rem;
 }
+
+
+
+/* DEBASISH PORTION END*/
+
+
+
+
+
+
+
 
 
 /************ Food Menu Section ***********/
@@ -159,49 +244,60 @@
   padding: 100px 0;
   background-color: #f8f8f8;
 }
+
 .menu .section-title {
   text-align: center;
   margin-bottom: 50px;
 }
+
 .menu-card {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   overflow: hidden;
-position: relative; /* For positioning the icon */
-margin: 2vh;
+  position: relative;
+  /* For positioning the icon */
+  margin: 2rem;
 }
+
 .menu-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
+
 .menu-img img {
   max-width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;
 }
+
 .menu-details {
   padding: 20px;
 }
+
 .menu-details h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
+
 .menu-details p {
   color: #777;
   margin-bottom: 15px;
 }
+
 .menu-details .price {
   font-size: 20px;
   font-weight: 600;
   color: #e81d1d;
 }
+
 .item-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .icon {
   background-color: #e81d1d;
   color: white;
@@ -212,18 +308,21 @@ margin: 2vh;
   align-items: center;
   justify-content: center;
 }
+
 .veg {
-  background-color: #8bc34a; /* Veg icon color */
+  background-color: #8bc34a;
+  /* Veg icon color */
 }
 
 .non-veg {
-  background-color: #e53935; /* Non-Veg icon color */
+  background-color: #e53935;
+  /* Non-Veg icon color */
 }
 
 
 /********************About us section************************/
 
-.about-us{
+.about-us {
   background-image: url(assets/about-us.jpg);
   position: relative;
   padding: 108px 0px 108px;
@@ -233,7 +332,8 @@ margin: 2vh;
   background-attachment: fixed;
   background-position: right bottom;
 }
-.about-us::before{
+
+.about-us::before {
   position: absolute;
   content: '';
   left: 0px;
@@ -241,44 +341,54 @@ margin: 2vh;
   width: 100%;
   height: 100%;
   display: block;
-  background-color: rgba(0,0,0,0.60);
+  background-color: rgba(0, 0, 0, 0.60);
 }
-.about-banner-text{
+
+.about-banner-text {
   position: relative;
 }
-.about-us h1{
+
+.about-us h1 {
   color: #fff;
 }
+
 .breadcrumb-item+.breadcrumb-item::before {
   color: #fff !important;
 }
-.about-us a{
+
+.about-us a {
   text-decoration: none;
   color: #fff;
 }
-.about-us-text{
+
+.about-us-text {
   padding: 100px 0px 80px;
 }
-.about-us-text .title{
+
+.about-us-text .title {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.about-us-text .res-text{
+
+.about-us-text .res-text {
   font-size: 45px;
   color: #777777;
   font-weight: 300;
 }
-.about-us-text h1{
+
+.about-us-text h1 {
   color: #e73100;
   font-size: 50px;
 }
-.about-us-text .inner-text p{
+
+.about-us-text .inner-text p {
   color: #757575;
   font-size: 16px;
   line-height: 1.9em;
 }
-.about-us-text .inner-text button{
+
+/* .about-us-text .inner-text button {
   border: 0;
   outline: none;
   background: black;
@@ -291,24 +401,29 @@ margin: 2vh;
   letter-spacing: 1px;
   margin-top: 1.5rem;
   border: 1px solid black;
-}
-.about-us-text .inner-text button:hover{
+} */
+
+.about-us-text .inner-text button:hover {
   background: transparent;
   border: 1px solid black;
   color: #000000;
 }
-.about-us-text .right-img{
+
+.about-us-text .right-img {
   position: relative;
 }
-.about-us-text .upper-pic{
+
+.about-us-text .upper-pic {
   text-align: end;
 }
-.about-us-text .lower-pic{
+
+.about-us-text .lower-pic {
   position: absolute;
   left: 56px;
   top: 150px;
 }
-.about-us-text{
+
+.about-us-text {
   margin-bottom: 40px;
 }
 
@@ -355,8 +470,7 @@ margin: 2vh;
 }
 
 .reach-btn {
-  background: linear-gradient(
-      124deg,
+  background: linear-gradient(124deg,
       #ff2400,
       #e81d1d,
       #e8b71d,
@@ -365,8 +479,7 @@ margin: 2vh;
       #1ddde8,
       #2b1de8,
       #dd00f3,
-      #dd00f3
-  );
+      #dd00f3);
   color: #fff;
   border: none;
   border-radius: 16px;
@@ -377,13 +490,12 @@ margin: 2vh;
 }
 
 .reach-btn:hover {
-  background: linear-gradient(
-      124deg,
+  background: linear-gradient(124deg,
 
       #2b1de8,
       #1ddde8,
       #1de840,
       #e3e81d,
       #e8b71d,
-  );
+    );
 }
