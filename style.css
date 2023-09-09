@@ -7,6 +7,9 @@
   box-sizing: border-box;
   font-family: 'Baskervville', serif;
 }
+img{
+  max-width: 100%;
+}
 
 a {
   color: white;
@@ -521,4 +524,29 @@ a:hover {
       #e3e81d,
       #e8b71d,
     );
+}
+
+
+/********* responsive code ************/
+
+@media(max-width:768px){
+  .navbar-nav{
+    text-align: center;
+  }
+  .navbar{
+    height: 100%;
+    background: #000;
+  }
+  .navbar-toggler{
+    background: #fff;
+  }
+  .nav-link{
+    margin:0 auto;
+  }
+  .navbar-collapse{
+    text-align: center;
+  }
+  .reach-btn{
+    margin-bottom: 10px;
+  }
 }
